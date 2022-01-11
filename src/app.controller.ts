@@ -9,14 +9,4 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
-
-  @Get('tx')
-  createWallet(): void {
-    this.appService.transaction();
-  }
-
-  @Get('query')
-  getChainQueryingResult(): void {
-    this.appService.query();
-  }
 }
